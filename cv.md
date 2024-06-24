@@ -1,3 +1,5 @@
+![My photo](./img/unnamed.png)
+
 # **Maksym Baldyniuk**
 
 ## **Contacts**
