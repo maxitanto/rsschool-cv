@@ -1,22 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="fonts/32ADEO.woff2" as="font" type="font/woff2" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      as="font"
+      type="font/playfair-display"
+    >
+    <link rel="stylesheet" href="./styles/style.css">
     <title>My CV</title>
   </head>
   <body>
-    <header>
-      <h1>Hello</h1>
-      <p>Some text</p>
-      <ul>
-        <li>2121</li>
-      </ul>
-    </header>
-    <main></main>
-    <footer></footer>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#about">About Me</a></li>
+            <li class="nav-item"><a href="#skills">Skills</a></li>
+            <li class="nav-item"><a href="#projects">Projects</a></li>
+            <li class="nav-item"><a href="#experience">Experience</a></li>
+            <li class="nav-item"><a href="#education">Education</a></li>
+            <li class="nav-item"><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <img src="./img/unnamed.png" alt="avatar" width="400" height="520">
+          <h1 class="hero-title">Maksym Baldyniuk</h1>
+        </section>
+
+        <section class="contacts">
+          <h2 id="contacts">Contacts</h2>
+          <ul>
+            <li>
+              <p>Phone:</p>
+              <a href="tel:+380508293389">38 (050) 829-33-89</a>
+            </li>
+            <li>
+              <p>E-mail:</p>
+              <a href="mailto:frundzik1989@gmail.com">frundzik1989@gmail.com</a>
+            </li>
+            <li>
+              <p>Discord:</p>
+              <a href="https://discordapp.com/users/1251110022671237123">maxitanto</a>
+            </li>
+            <li>
+              <p>GitHub:</p>
+              <a href="https://github.com/maxitanto">maxitanto</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="about">
+          <h2 id="about">About Me</h2>
+          <p>I am 35 years old and a seasoned lawyer with over 13 years of professional experience. Most of my career has been spent as a public servant, where I have honed the following skills:</p>
+          <ul>
+            <li>Effective communication with a diverse range of people</li>
+            <li>Resilience under stress</li>
+            <li>Proficient time management</li>
+            <li>A proactive approach to finding necessary information and solutions to complex problems</li>
+          </ul>
+          <p>Handling large volumes of ever-changing information has instilled in me a passion for continuous learning.</p>
+          <blockquote>“Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young. The greatest thing in life is to keep your mind young.” — Henry Ford.</blockquote>
+        </section>
+
+        <section class="skills">
+          <h2 id="skills">Skills</h2>
+          <h3>Hard Skills</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS (Sass)</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Responsive, adaptive markup</li>
+            <li>Git, GitHub</li>
+            <li>Figma</li>
+          </ul>
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>High learnability</li>
+            <li>Attention to detail</li>
+            <li>Teamwork</li>
+            <li>Curiosity</li>
+          </ul>
+          <h3>Languages</h3>
+          <ul>
+            <li>Ukrainian (native)</li>
+            <li>Russian (native)</li>
+            <li>English A1 (beginner), currently improving through courses and practice</li>
+          </ul>
+        </section>
+
+        <section class="code-example">
+          <h2>Code example</h2>
+          <h3>DESCRIPTION:</h3>
+        <p>Your classmates asked you to copy some paperwork for them. You know that there are ‘n’ classmates and the paperwork has ‘m’ pages.
+Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 return 0.</p>
+<pre>
+  <code>
+  function paperwork(n, m) {
+  const pages = n * m;
+  if (n < 0 || m < 0) {
+    return 0;
+  }
+  return pages;
+}
+</code>
+</pre>
+        </section>
+
+        <section class="experience">
+          <h2 id="experience">Experience</h2>
+          <p>2011 - Present: Practicing Lawyer and Attorney</p>
+        </section>
+
+        <section class="education">
+          <h2 id="education">Education</h2>
+          <ul>
+            <li>Donetsk National University (September 2006 - June 2011)
+              <ul>
+                <li>Jurisprudence</li>
+              </ul>
+            </li>
+
+            <li>GoIT
+              <ul>
+                <li>Fullstack</li>
+              </ul>
+            </li>
+
+            <li>The Rolling Scopes School
+              <ul>
+                <li>JavaScript / Front-end Pre-school - in progress</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section class="projects">
+          <h2 id="projects">My Projects</h2>
+          <ul class="projects-list">
+            <li>
+              <a href="https://maxitanto.github.io/goit-markup-hw-06/index.html" target="_blank" rel="noreferrer noopener">
+                <img src="./img/web-studio.jpg" alt="web-studio" width="300" height="300">
+                <p>Web-Studio</p>
+              </a>
+            </li>
+            <li>
+                <a href="https://maxitanto.github.io/goit-react-hw-08-phonebook/" target="_blank" rel="noreferrer noopener">
+                  <img src="./img/phone-book.jpg" alt="phone-book" width="300" height="300">
+                  <p>Phone-book</p>
+              </a>
+            </li>
+            <li>
+                <a href="https://maxitanto.github.io/goit-react-hw-05-movies" target="_blank" rel="noreferrer noopener">
+                  <img src="./img/film-library.jpg" alt="film-library" width="300" height="300">
+                  <p>Film library</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <a href="https://github.com/maxitanto" target="_blank" rel="noreferrer noopener">Welcome to my GitHub</a>
+        <a href="https://rs.school/courses/javascript-preschool-ru" target="_blank" rel="noreferrer noopener"><img src="./img/rs-logo.svg" alt="rs-logo" width="36" height="36"> </a>
+        <p>&copy 2024</p>
+      </footer>
+    </div>
   </body>
 </html>
