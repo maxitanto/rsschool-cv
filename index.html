@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      as="font"
+      type="font/playfair-display"
+    >
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>My CV</title>
+  </head>
+  <body>
+<div class="container">
+  <header class="header">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-item__link" href="#about">About Me</a></li>
+            <li class="nav-item"><a class="nav-item__link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-item__link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-item__link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-item__link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-item__link" href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+  </header>
+  <main class="main">
+    <div class="hero">
+      <img class="hero-photo" src="./img/unnamed.png" alt="avatar" width="300" height="426">
+      <div class="hero-content">
+        <h1 class="hero-title">Maksym Baldyniuk</h1>
+        <p class="hero-text">Strong junior developer</p>
+            <div class="contacts">
+          <ul class="contact-list" id="contacts">
+            <li class="contact-list__item">
+              <p class="contact-list__title">Phone:</p>
+              <a class="contact-list__link" href="tel:+380508293389">38 (050) 829-33-89</a>
+            </li>
+            <li class="contact-list__item">
+              <p class="contact-list__title">E-mail:</p>
+              <a class="contact-list__link" href="mailto:frundzik1989@gmail.com">frundzik1989@gmail.com</a>
+            </li>
+            <li class="contact-list__item">
+              <p class="contact-list__title">Discord:</p>
+              <a class="contact-list__link" href="https://discordapp.com/users/1251110022671237123" target="_blank" rel="noreferrer noopener">maxitanto</a>
+            </li>
+            <li class="contact-list__item">
+              <p class="contact-list__title">GitHub:</p>
+              <a class="contact-list__link" href="https://github.com/maxitanto" target="_blank" rel="noreferrer noopener">maxitanto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="about">
+      <div class="wrapper">
+        <h2 class="title" id="about">About Me</h2>
+        <p class="about-text">I am 35 years old and a seasoned lawyer with over 13 years of professional experience. Most of my career has been spent as a public servant, where I have honed the following skills:</p>
+        <ul class="about-list">
+          <li class="about-item">Effective communication with a diverse range of people</li>
+          <li class="about-item">Resilience under stress</li>
+          <li class="about-item">Proficient time management</li>
+          <li class="about-item">A proactive approach to finding necessary information and solutions to complex problems</li>
+        </ul>
+        <p class="about-text">Handling large volumes of ever-changing information has instilled in me a passion for continuous learning.</p>
+        <blockquote class="quote">“Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young. The greatest thing in life is to keep your mind young.” — Henry Ford.</blockquote>
+      </div>
+    </section>
+
+    <section class="skills">
+      <div class="wrapper">
+        <h2 class="title" id="skills">Skills</h2>
+        <div class="skills-wrapper">
+          <div class="skills-set">
+            <h3>Hard Skills</h3>
+            <ul>
+              <li class="skills-item">HTML</li>
+              <li class="skills-item">CSS (Sass)</li>
+              <li class="skills-item">JavaScript</li>
+              <li class="skills-item">React</li>
+              <li class="skills-item">Responsive, adaptive markup</li>
+              <li class="skills-item">Git, GitHub</li>
+              <li class="skills-item">Figma</li>
+            </ul>
+          </div>
+          <div class="skills-set">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li class="skills-item">High learnability</li>
+              <li class="skills-item">Attention to detail</li>
+              <li class="skills-item">Teamwork</li>
+              <li class="skills-item">Curiosity</li>
+            </ul>
+          </div>
+          <div class="skills-set">
+            <h3 class="skills-languages">Languages</h3>
+            <ul>
+              <li class="skills-item">Ukrainian (native)</li>
+              <li class="skills-item">Russian (native)</li>
+              <li class="skills-item">English A1 (beginner), currently improving <br> through courses and practice</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience">
+      <div class="wrapper">
+        <h2 class="title" id="experience">Experience</h2>
+        <p><b>2011 - Present:</b> Practicing Lawyer and Attorney</p>
+      </div>
+    </section>
+
+    <section class="education">
+      <div class="wrapper">
+        <h2 class="title" id="education">Education</h2>
+          <ul>
+            <li class="education-item"><b>Donetsk National University (September 2006 - June 2011)</b>
+              <ul class="education-sub__item">
+                <li class="education-item__prof">Jurisprudence</li>
+              </ul>
+            </li>
+
+            <li class="education-item"><b>GoIT</b>
+              <ul class="education-sub__item">
+                <li class="education-item__prof">Fullstack</li>
+              </ul>
+            </li>
+
+            <li class="education-item"><b>The Rolling Scopes School</b>
+              <ul class="education-sub__item">
+                <li class="education-item__prof">JavaScript / Front-end Pre-school - in progress</li>
+              </ul>
+            </li>
+          </ul>
+      </div>
+    </section>
+
+    <section class="code-example">
+      <div class="wrapper">
+        <h2 class="title">Code example</h2>
+        <h3>DESCRIPTION:</h3>
+        <p>Your classmates asked you to copy some paperwork for them. You know that there are ‘n’ classmates and the paperwork has ‘m’ pages.
+Your task is to calculate how many blank pages do you need. If <span class="code-descrip">n &lt; 0</span>or <span  class="code-descrip">m &lt; 0</span>return <span class="code-descrip">0</span>.</p>
+        <pre class="code-box">
+          <code class="code">
+            <b>function</b>&nbsp;paperwork(n, m) {
+              <b>const</b>&nbsp;pages = n <b>*</b>&nbsp;m;
+              <b>if</b>&nbsp;(n &lt; 0 <b>||</b>&nbsp;m &lt; 0) {
+                <b>return</b>&nbsp;0;
+              }
+              <b>return</b>&nbsp;pages;
+            }
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="wrapper">
+        <h2 class="title" id="projects">My Projects</h2>
+        <ul class="projects-list">
+          <li class="projects-list__item">
+            <a class="projects-link" href="https://maxitanto.github.io/goit-markup-hw-06/index.html" target="_blank" rel="noreferrer noopener">
+              <img src="./img/web-studio.jpg" alt="web-studio" width="300" height="300">
+              <p class="projects-text">Web-Studio</p>
+            </a>
+          </li>
+          <li class="projects-list__item">
+            <a class="projects-link" href="https://maxitanto.github.io/goit-react-hw-08-phonebook/" target="_blank" rel="noreferrer noopener">
+              <img src="./img/phone-book.jpg" alt="phone-book" width="300" height="300">
+              <p class="projects-text">Phone-book</p>
+            </a>
+          </li>
+          <li class="projects-list__item">
+            <a class="projects-link" href="https://maxitanto.github.io/goit-react-hw-05-movies" target="_blank" rel="noreferrer noopener">
+              <img src="./img/film-library.jpg" alt="film-library" width="300" height="300">
+              <p class="projects-text">Film library</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-content">
+        <p>&copy; 2024</p>
+        <a class="footer-link__github" href="https://github.com/maxitanto" target="_blank" rel="noreferrer noopener">Welcome to my GitHub</a>
+        <a href="https://rs.school/courses/javascript-preschool-ru" target="_blank" rel="noreferrer noopener" aria-label="lorem ipsum"><svg class="footer-link__school" width="40" height="40" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_5701_38384)"><circle cx="32" cy="32" r="32" fill="black"/><path fill-rule="evenodd" clip-rule="evenodd" d="M13 21.5095V42.5L19.3067 42.4621V33.9474C20.0567 33.9474 20.7616 33.9775 21.4049 34.4267C21.8946 34.8785 22.2838 35.4335 22.546 36.054L25.9202 42.4621H33C31.5957 39.6675 30.4706 36.1327 28.0552 34.0104C27.5455 33.6749 26.9919 33.4158 26.411 33.241C27.1873 33.0779 27.9357 32.7973 28.6319 32.4084C30.3855 31.3375 31.3915 29.3808 31.3436 27.3374C31.3798 26.1328 31.0495 24.9466 30.3988 23.9441C28.9256 21.6883 25.9337 21.4213 23.4663 21.5095H13ZM21.9939 30.0116H19.3313V25.6975H22.1043C23.4807 25.5594 25.1814 26.1754 25.0859 27.8041C25.1499 29.5621 23.3647 29.9127 21.9939 30.0116Z" fill="#FFB749"/><path d="M39.4768 35.089L33 35.4666C33.1262 37.3671 34.0021 39.16 35.4636 40.5088C36.9117 41.8323 39.5076 42.4941 43.2515 42.4941C46.3564 42.5823 49.9058 41.8146 51.821 39.1569C52.5929 38.0934 53.0033 36.8427 52.9998 35.564C53.0217 33.1848 51.4339 31.2297 49.3044 30.3147C47.2632 29.4766 45.1198 28.8674 42.9204 28.5C42.1107 28.41 41.3327 28.1563 40.6423 27.757C39.9039 27.2597 40.078 26.2272 40.735 25.7596C42.6084 24.5207 45.6299 25.5545 45.8608 27.9032L52.2845 27.5621C52.1703 25.768 51.1844 24.0545 49.6356 22.9583C47.6987 21.8887 45.4532 21.3874 43.1986 21.5212C41.3493 21.4527 39.5037 21.7218 37.7682 22.3128C35.6082 23.1125 33.829 25.064 33.8344 27.4525C33.7931 28.9377 34.5158 30.4088 35.755 31.3621C37.6454 32.6238 39.8325 33.4582 42.139 33.798C43.3833 33.9637 44.5727 34.3795 45.6224 35.0159C46.5878 35.7309 46.5807 37.167 45.5959 37.8903C44.5078 38.6532 42.9034 38.7416 41.6818 38.2468C40.3717 37.716 39.6048 36.4784 39.4768 35.089Z" fill="#FFB749"/></g><defs><clippath><rect width="64" height="64" fill="white"/></clippath></defs></svg> </a>
+      </div>
+    </div>
+  </footer>
+</div>
+  </body>
+</html>
